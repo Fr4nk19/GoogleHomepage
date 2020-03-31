@@ -1,0 +1,118 @@
+/*
+Author: Francisco J. Alfaro
+License: MIT
+Website: https://ifr4nk.com
+Date: 31/03/2020
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+.header-menu {
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    padding-top: 15px;
+}
+.header-menu .h-left{
+    flex: 1 1 50%;
+}
+.header-menu .h-right{
+    flex: 1 1 50%;
+}
+.cont-menu {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 317px;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 0px;
+    align-items: center;
+}
+.cont-menu div {
+    flex: 1 1 25%;
+    text-align: center;
+}
+.gb_Xe {
+    max-width: 32px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.cont-menu a{
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.cont-menu a:hover{
+    text-decoration: underline;
+}
+.cont-menu div img {
+    border-radius: 18px;
+    display: flex;
+}
+.logo-g{
+    height: calc(var(--logo-height) + var(--logo-margin-bottom));
+    margin-top: var(--logo-margin-top);
+    min-height: fit-content;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 21vh;
+}
+.search-box {
+    margin: 0 auto 0 auto;
+    min-width: 410px;
+    width: var(--content-width);
+    margin-top: 25px;
+}
+.search-cont {
+    background: white;
+    cursor: text;
+    margin: 0 auto;
+    max-width: 584px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 22px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: var(--searchbox-height);
+    opacity: 1;
+    position: relative;
+    transition: none;
+    display: flex;
+    padding: 10px 0px;
+}
+.search-icon {
+    flex: 1 1 10%;
+    background: url(images/lupa.svg)no-repeat;
+    left: 18px;
+    right: 18px;
+    position: relative;
+    top: 4px;
+    height: 22px;
+}
+.search-cont input[type="text"] {
+    border: none;
+    flex: 1 1 80%;
+    height: 28px;
+}
+button#microphone {
+    flex: 1 1 10%;
+    border:none;
+    background: url(images/micro.svg)no-repeat;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    right: -18px;
+    top: 2px;
+}
+.search-cont input[type="text"]::placeholder {
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+}
